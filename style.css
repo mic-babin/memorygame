@@ -68,14 +68,17 @@ body {
 }
 
 .card.visible .card-back {
+  -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
+  -webkit-transform: rotateY(0);
   transform: rotateY(0)
 }
 
 .card.matched .card-value {
+  -webkit-animation: dance 1s linear 2 500ms;
   animation: dance 1s linear 2 500ms;
 }
 
@@ -101,18 +104,31 @@ body {
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
+  -webkit-animation: overlay-grow 500ms forwards;
   animation: overlay-grow 500ms forwards;
 }
 
 @keyframes overlay-grow {
-  from {
+  0% {
     background-color: rgba(0, 0, 0, 0);
     font-size: 0;
   }
 
-  to {
+  100% {
     background-color: rgba(0, 0, 0, .8);
     font-size: 10em;
+  }
+}
+
+@-webkit-keyframes overlay-grow {
+  0% {
+    -webkit-background-color: rgba(0, 0, 0, 0);
+    -webkit-font-size: 0em;
+  }
+
+  100% {
+    -webkit-background-color: rgba(0, 0, 0, 0.9);
+    -webkit-font-size: 10em;
   }
 }
 
@@ -129,6 +145,24 @@ body {
 
   75% {
     transform: rotate(30deg);
+  }
+}
+
+@-webkit-keyframes dance {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-30deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(30deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
   }
 }
 
