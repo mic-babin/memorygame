@@ -48,9 +48,9 @@ body {
   width: 150px;
 }
 
-.card:hover {
-  /* cursor: url("img/cursor.png"), url("img/cursor.cur"), pointer; */
-}
+/* .card:hover {
+  cursor: url("img/cursor.png"), url("img/cursor.cur"), pointer; 
+} */
 
 .card-face {
   position: absolute;
