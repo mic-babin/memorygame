@@ -64,8 +64,12 @@ body {
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
-  -webkit-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
+  -webkit-transition: transform;
+  -webkit-transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .card.visible .card-back {
@@ -80,8 +84,16 @@ body {
 
 
 .card.matched .card-value {
-  -webkit-animation: dance 1s linear 2 500ms;
-  animation: dance 1s linear 2 500ms;
+  -webkit-animation-name: dance;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-delay: 500ms;
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-delay: 500ms;
 }
 
 .overlay-text {
@@ -106,8 +118,16 @@ body {
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
-  -webkit-animation: overlay-grow 500ms forwards;
-  animation: overlay-grow 500ms forwards;
+  -webkit-animation-name: overlay-grow;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-fill-mode: forwards;
+
+
+  animation-name: overlay-grow;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+
+
 }
 
 @keyframes overlay-grow {
@@ -182,8 +202,12 @@ body {
 
 
 .card-value {
-  -webkit-transition: transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
+  -webkit-transition: transform;
+  -webkit-transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition: transform;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
   -webkit-transform: scale(.9);
   transform: scale(.9);
 }
@@ -202,8 +226,12 @@ body {
   align-self: flex-start;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all;
+  -webkit-transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 .card-back:hover .archi {
