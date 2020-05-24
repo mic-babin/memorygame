@@ -64,8 +64,8 @@ body {
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
-  -webkit-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .card.visible .card-back {
@@ -182,8 +182,8 @@ body {
 
 
 .card-value {
-  -webkit-transition: transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(.9);
   transform: scale(.9);
 }
