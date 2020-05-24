@@ -187,6 +187,11 @@ body {
   transition: transform 100ms ease-in-out;
   -webkit-transform: scale(.9);
   transform: scale(.9);
+  z-index: -1;
+}
+
+.card-value img {
+  z-index: -1;
 }
 
 .card-front:hover .card-value {
