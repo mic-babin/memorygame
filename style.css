@@ -78,14 +78,10 @@ body {
   transform: rotateY(0)
 }
 
-.card.visible .card-front img {
-  opacity: 1;
-}
 
 .card.matched .card-value {
   -webkit-animation: dance 1s linear 2 500ms;
   animation: dance 1s linear 2 500ms;
-  z-index: -1;
 }
 
 .overlay-text {
@@ -182,7 +178,6 @@ body {
   border-color: #333;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  z-index: -1;
 }
 
 
@@ -191,12 +186,9 @@ body {
   transition: transform 100ms ease-in-out;
   -webkit-transform: scale(.9);
   transform: scale(.9);
-  z-index: -1;
 }
 
-.card .card-front img {
-  opacity: 0;
-}
+
 
 
 .card-front:hover .card-value {

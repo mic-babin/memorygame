@@ -119,7 +119,7 @@ class MixOrMatch {
           card1.classList.remove('visible');
           card2.classList.remove('visible');
           this.busy = false;
-      }, 2000);
+      }, 1000);
   }
   shuffleCards(cardsArray) {
       for (let i = cardsArray.length - 1; i > 0; i--) {
