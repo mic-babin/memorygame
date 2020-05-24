@@ -90,7 +90,9 @@ class MixOrMatch {
           this.audioController.flip();
           this.totalClicks++;
           this.ticker.innerText = this.totalClicks;
-          card.classList.add('visible');
+          setTimeout(() => {
+            card.classList.add('visible');
+          }, 500)
 
           if(this.cardToCheck) {
               this.checkForCardMatch(card);
