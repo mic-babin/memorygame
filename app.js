@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.card-front').style.visibility = "hidden";
-}, false);
 
 class AudioController {
   constructor() {
@@ -122,7 +119,7 @@ class MixOrMatch {
           card1.classList.remove('visible');
           card2.classList.remove('visible');
           this.busy = false;
-      }, 1000);
+      }, 2000);
   }
   shuffleCards(cardsArray) {
       for (let i = cardsArray.length - 1; i > 0; i--) {
