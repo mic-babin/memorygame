@@ -64,10 +64,10 @@ body {
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
-  -webkit-transition: transform;
+  -webkit-transition: -webkit-transform;
   -webkit-transition-duration: 500ms;
   -webkit-transition-timing-function: ease-in-out;
-  transition: transform;
+  transition: -webkit-transform;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
@@ -162,15 +162,15 @@ body {
 
   0%,
   100% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
   }
 
   25% {
-    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
   }
 
   75% {
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
   }
 }
 
@@ -206,10 +206,10 @@ body {
 
 
 .card-value {
-  -webkit-transition: transform;
+  -webkit-transition: -webkit-transform;
   -webkit-transition-duration: 100ms;
   -webkit-transition-timing-function: ease-in-out;
-  transition: transform;
+  transition: -webkit-transform;
   transition-duration: 100ms;
   transition-timing-function: ease-in-out;
   -webkit-transform: scale(.9);
