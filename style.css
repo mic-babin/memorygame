@@ -81,6 +81,7 @@ body {
 .card.matched .card-value {
   -webkit-animation: dance 1s linear 2 500ms;
   animation: dance 1s linear 2 500ms;
+  z-index: -1;
 }
 
 .overlay-text {
