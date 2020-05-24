@@ -175,6 +175,7 @@ body {
   background-color: #Fff;
   border-color: #333;
   transform: rotateY(180deg);
+  opacity: 0;
 }
 
 .card-value {
