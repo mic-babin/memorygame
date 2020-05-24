@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    card.classList.remove('visible');
+}, false);
+
 class AudioController {
   constructor() {
       this.bgMusic = new Audio('');
