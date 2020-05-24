@@ -4,8 +4,9 @@
 
 html {
   min-height: 100vh;
-  cursor: url("img/cursor.cur"), auto;
+  cursor: url("https://sleepy-shockley-8b3cbd.netlify.app/img/cursor.cur"), auto;
 }
+
 
 body {
   margin: 0;
@@ -48,7 +49,7 @@ body {
 }
 
 .card:hover {
-  cursor: url("img/cursor.cur"), auto;
+  cursor: url("img/cursor.png"), url("img/cursor.cur"), pointer;
 }
 
 .card-face {
