@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    card.classList.remove('visible');
-}, false);
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.querySelectorAll('.card-front').style.visibility = "hidden";
+// }, false);
 
 class AudioController {
   constructor() {

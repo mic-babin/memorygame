@@ -174,16 +174,20 @@ body {
 .card-front {
   background-color: #Fff;
   border-color: #333;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  opacity: 0;
 }
 
+
 .card-value {
+  -webkit-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
+  -webkit-transform: scale(.9);
   transform: scale(.9);
 }
 
 .card-front:hover .card-value {
+  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -191,11 +195,14 @@ body {
 
 .archi {
   align-self: flex-start;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 .card-back:hover .archi {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1)
 }
 
